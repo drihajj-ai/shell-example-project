@@ -47,9 +47,12 @@ function list_users_with_read_access {
 
 function helper {
  expected_cmd_args=2
+ 
  if [ $# -ne $expected_cmd_args]; then
-  echo "please execute the required script with the right cmd args" 
+  echo "please execute the script with the correct number of arguments" 
   echo "asd"
+  exit 1
+fi
 }
 
 # Main script
